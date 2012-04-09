@@ -1,5 +1,9 @@
 object FizzBuzz {
   def fizzbuzz(num: Integer): String = {
-    num.toString()
+    if (num == 3) {
+      "Fizz"
+    } else {
+      num.toString
+    }
   }
 }
