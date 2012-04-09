@@ -6,5 +6,6 @@ class FizzBuzzTest extends FunSuite {
   test("fizzbuzz returns '1' when it take 1 as an argument.") {
 
     assert(fizzbuzz(1) === "1")
+    assert(fizzbuzz(2) === "2")
   }
 }
