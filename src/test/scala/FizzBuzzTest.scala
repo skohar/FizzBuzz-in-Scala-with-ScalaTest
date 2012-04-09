@@ -11,5 +11,6 @@ class FizzBuzzTest extends FunSuite {
     assert(fizzbuzz(5) === "Buzz")
     assert(fizzbuzz(6) === "Fizz")
     assert(fizzbuzz(10) === "Buzz")
+    assert(fizzbuzz(15) === "FizzBuzz")
   }
 }
