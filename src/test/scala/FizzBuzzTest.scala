@@ -1,16 +1,31 @@
-import org.scalatest.FunSuite
 import FizzBuzz._
+import org.specs2.mutable._
 
-class FizzBuzzTest extends FunSuite {
+class FizzBuzzTest extends Specification {
 
-  test("fizzbuzz returns '1' when it take 1 as an argument.") {
+  "FizzBuzz".title
 
-    assert(fizzbuzz(1) === "1")
-    assert(fizzbuzz(2) === "2")
-    assert(fizzbuzz(3) === "Fizz")
-    assert(fizzbuzz(5) === "Buzz")
-    assert(fizzbuzz(6) === "Fizz")
-    assert(fizzbuzz(10) === "Buzz")
-    assert(fizzbuzz(15) === "FizzBuzz")
+  "fizzBuzz should return" should {
+    "1 when given 1" in {
+      fizzbuzz(1) must equalTo("1")
+    }
+    "2 when given 2" in {
+      fizzbuzz(2) must equalTo("2")
+    }
+    "3 when given Fizz" in {
+      fizzbuzz(3) must equalTo("Fizz")
+    }
+    "5 when given Buzz" in {
+      fizzbuzz(5) must equalTo("Buzz")
+    }
+    "6 when given Fizz" in {
+      fizzbuzz(6) must equalTo("Fizz")
+    }
+    "10 when given Buzz" in {
+      fizzbuzz(10) must equalTo("Buzz")
+    }
+    "15 when given Buzz" in {
+      fizzbuzz(15) must equalTo("FizzBuzz")
+    }
   }
 }

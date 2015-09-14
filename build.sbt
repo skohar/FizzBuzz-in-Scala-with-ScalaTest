@@ -1,3 +1,3 @@
-import sbt._
+libraryDependencies += "org.specs2" %% "specs2-core" % "3.6.4" % "test"
 
-libraryDependencies += "org.scalatest" %% "scalatest" % "1.9" % "test"
+scalacOptions in Test ++= Seq("-Yrangepos")
